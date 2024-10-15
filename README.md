@@ -1,4 +1,4 @@
-# camitax-usage-eval
+# CAMITAX usage eval
 
 Camitax is run by default with the docker profile, therefore, while nextflow is running (java), tools belonging to camitax are run as Docker containers, thus making it difficult to monitor the resources consumed by the workflow.
 
