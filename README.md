@@ -11,6 +11,15 @@ In the following, we are using the ``docker stats`` command to montor cpu and RA
 
 
 
+``nextflow run CAMI-challenge/CAMITAX -profile docker --db /path/to/db --i /path/to/input/data --x fa -c /data/CAMITAX/nextflow.config -bg``
+
+the script ``ompute_docker_total_stats.sh`` run the ``docker stats`` command, sum RAM and CPU consumption for each docker running
+
+
+> [!NOTE]
+> For this strategy to work, the only containers running must be those of camitax so as not to distort the measurement
+
+
 ## Usage
 
 
