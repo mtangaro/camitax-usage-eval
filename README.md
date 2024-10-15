@@ -31,7 +31,9 @@ In the following we describe the three steps to perform the measure
 
 1. Nextflow can be run in backgroud mode or not, depending on the run time length. Run nextflow with the command:
 
-``nextflow run CAMI-challenge/CAMITAX -profile docker --db /path/to/db --i /path/to/input/data --x fa -c /data/CAMITAX/nextflow.config -bg``
+```
+nextflow run CAMI-challenge/CAMITAX -profile docker --db /path/to/db --i /path/to/input/data --x fa -c /data/CAMITAX/nextflow.config -bg
+```
 
 2. Nextflow is a java application so its PID can be easily retrieved with:
 
