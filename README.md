@@ -45,4 +45,14 @@ or
 ps -aux | grep nextflow
 ```
 
-3. Run the monitoring script:
+3. Finally, run the monitoring script with:
+
+```
+python update_camitax_metrics.py -p <NEXTFLOW PID>
+```
+
+or with nohup:
+
+```
+nohup python update_camitax_metrics.py -p <NEXTFLOW PID> &
+```
