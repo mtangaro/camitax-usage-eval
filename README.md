@@ -58,3 +58,11 @@ or with nohup:
 ```
 nohup python update_camitax_metrics.py -p <NEXTFLOW PID> &
 ```
+
+## cAdvisor 
+
+Container Advisor is a google live dashboard for Containers resource monitoring. It is useful for real time monitoring:
+
+```
+docker run --volume=/:/rootfs:ro --volume=/var/run:/var/run:ro --volume=/sys:/sys:ro --volume=/var/lib/docker/:/var/lib/docker:ro --publish=8080:8080 --detach=true --name=cadvisor gcr.io/cadvisor/cadvisor:latest
+```
